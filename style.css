@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Bold.ttf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EFEEED;
+    color: #272624;
+}
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #EFEEED;
+    padding: 25px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 25px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    color: #272624;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #272624;
+    color: #FFFFFF;
+}
+
+/* ========================= */
+/* GENERAL SECTION */
+/* ========================= */
+
+.section {
+    min-height: 100vh;
+    padding: 200px 40px;
+    text-align: center;
+}
+.section h1 { 
+    font-size: 60px;  
+    font-weight: 700;  
+    margin-bottom: 30px; 
+}
+
+
+/* ========================= */
+/* HERO SECTION (BIG SCALE) */
+/* ========================= */
+
+body {
+    background-image: url("bg.png"); /* PUT YOUR IMAGE FILE NAME HERE */
+    background-size: cover;      /* Makes it full screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Parallax effect */
+    
+    color: #272624;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.hero span {
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* CENTER AREA */
+.hero-center {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+/* PROFILE CIRCLE BIG */
+.profile-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+}
+
+.profile-circle img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* PUZZLES BIG */
+.puzzle-left,
+.puzzle-right {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.puzzle-left img,
+.puzzle-right img {
+    width: 180px;
+    transition: 0.4s ease;
+}
+
+.puzzle-left img:hover,
+.puzzle-right img:hover {
+    transform: scale(1.1) rotate(8deg);
+}
+
+/* HERO TEXT BELOW */
+.small-text {
+    margin-top: -50px;
+    font-size: 16px;
+}
+
+/* BUTTON BIG */
+.btn {
+    margin-top: 25px;
+    background: #272624;
+    color: #FFFFFF;
+    padding: 16px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ========================= */
+/* ABOUT SECTION */
+/* ========================= */
+
+.card {
+    background: #FFFFFF;
+    padding: 50px;
+    border-radius: 30px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* SKILLS BIG */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.skill-box {
+    width: 150px;
+    height: 150px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.skill-box img {
+    width: 90px;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+}
+
+/* ========================= */
+/* PROJECT SECTION */
+/* ========================= */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.project-card {
+    width: 320px;
+    height: 320px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 115%;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 35px 80px rgb(255, 255, 255);
+}
+
+
+/* ========================= */
+/* CONTACT SECTION */
+/* ========================= */
+
+.social a {
+    display: block;
+    margin: 25px auto;
+    padding: 25px 37px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #272624;
+    width: 200px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: #272624;
+    color: #FFFFFF;
+    box-shadow: 0 35px 80px rgb(255, 255, 255);
+}
+
+.footer {
+    margin-top: 500px;
+    font-size: 14px;
+}
